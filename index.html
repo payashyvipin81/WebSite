@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aanya Sharma | UX Designer</title>
+  <script>
+    (function(){var t=localStorage.getItem("aanya-theme"),d=window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",t==="light"||t==="dark"?t:d?"dark":"light");})();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main navigation:  ed to the top of the screen while scrolling -->
+  <nav class="nav">
+
+    <!-- Brand name (left side): identifies the site owner, links back to home -->
+    <a href="index.html" class="nav-brand">Aanya Sharma</a>
+
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-icon nav-toggle-open" aria-hidden="true">☰</span>
+      <span class="nav-toggle-icon nav-toggle-close" aria-hidden="true">✕</span>
+    </button>
+
+    <!-- Menu links: full-width dropdown on mobile -->
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="admin.html" class="nav-link">Admin</a></li>
+    </ul>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+
+  </nav>
+
+  <!-- Hero: first thing visitors see — who you are and what to do next -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">PORTFOLIO 2026</p>
+      <h1 class="hero-title">I design products people actually enjoy using.</h1>
+      <p class="hero-subtitle">Senior UX Designer with 10 years of experience in fintech, edtech and healthcare.</p>
+      <a href="projects.html" class="hero-cta">See My Work →</a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><span class="hero-scroll-dot"></span></div>
+  </section>
+
+  <!-- Skills: highlights core UX capabilities -->
+  <section class="skills">
+    <h2 class="skills-heading">What I Do</h2>
+    <p class="skills-tagline">A toolkit shaped by 5 years of shipping real products.</p>
+
+    <div class="skills-grid">
+
+      <!-- Card 1: User Research -->
+      <article class="skill-card reveal">
+        <span class="skill-icon" aria-hidden="true">🎨</span>
+        <h3 class="skill-name">User Research</h3>
+        <p class="skill-description">Interviews, surveys and usability tests that uncover real user needs.</p>
+      </article>
+
+      <!-- Card 2: UI Design -->
+      <article class="skill-card reveal">
+        <span class="skill-icon" aria-hidden="true">🖌️</span>
+        <h3 class="skill-name">UI Design</h3>
+        <p class="skill-description">Pixel-perfect interfaces built in Figma with reusable design systems.</p>
+      </article>
+
+      <!-- Card 3: Information Architecture -->
+      <article class="skill-card reveal">
+        <span class="skill-icon" aria-hidden="true">🧭</span>
+        <h3 class="skill-name">Information Architecture</h3>
+        <p class="skill-description">Clear sitemaps and flows that make complex products feel simple.</p>
+      </article>
+
+      <!-- Card 4: Prototyping -->
+      <article class="skill-card reveal">
+        <span class="skill-icon" aria-hidden="true">📐</span>
+        <h3 class="skill-name">Prototyping</h3>
+        <p class="skill-description">High-fidelity, clickable prototypes that validate ideas before a single line of code.</p>
+      </article>
+
+      <!-- Card 5: Accessibility -->
+      <article class="skill-card reveal">
+        <span class="skill-icon" aria-hidden="true">♿</span>
+        <h3 class="skill-name">Accessibility</h3>
+        <p class="skill-description">WCAG-compliant designs that work for everyone, on every device.</p>
+      </article>
+
+      <!-- Card 6: Design Systems -->
+      <article class="skill-card reveal">
+        <span class="skill-icon" aria-hidden="true">📊</span>
+        <h3 class="skill-name">Design Systems</h3>
+        <p class="skill-description">Scalable component libraries that keep teams shipping fast and consistently.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">Aanya Sharma</p>
+        <p class="footer-tagline">Designing calm products for noisy industries.</p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-heading">Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-heading">Social</h3>
+        <ul class="footer-social footer-social-icons">
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a></li>
+          <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Dribbble"><span aria-hidden="true">🎨</span></a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a></li>
+          <li><a href="mailto:hello@aanyasharma.design" class="social-icon-btn" aria-label="Email"><span aria-hidden="true">✉️</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Aanya Sharma — Built with curiosity <span class="footer-heart" aria-hidden="true">♥</span> and Cursor.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

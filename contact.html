@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Aanya Sharma</title>
+  <script>
+    (function(){var t=localStorage.getItem("aanya-theme"),d=window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",t==="light"||t==="dark"?t:d?"dark":"light");})();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Main navigation:  ed to the top of the screen while scrolling -->
+  <nav class="nav">
+
+    <!-- Brand name (left side): identifies the site owner, links back to home -->
+    <a href="index.html" class="nav-brand">Aanya Sharma</a>
+
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-icon nav-toggle-open" aria-hidden="true">☰</span>
+      <span class="nav-toggle-icon nav-toggle-close" aria-hidden="true">✕</span>
+    </button>
+
+    <!-- Menu links: full-width dropdown on mobile -->
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+
+  </nav>
+
+  <header class="contact-header">
+    <h1 class="contact-title">Let's build something good.</h1>
+    <p class="contact-subtitle">Project enquiries, mentorship, or just a chai-chat. I reply within 24 hours.</p>
+  </header>
+
+  <section class="contact-main">
+    <div class="contact-grid">
+
+      <aside class="contact-card reveal">
+        <h2 class="contact-card-heading">Get in touch</h2>
+        <p class="contact-detail">
+          <span class="contact-label">Email</span>
+          <a href="mailto:hello@aanyasharma.design">hello@aanyasharma.design</a>
+        </p>
+        <p class="contact-detail">
+          <span class="contact-label">Location</span>
+          <span>Bengaluru, India</span>
+        </p>
+        <div class="contact-social">
+          <span class="contact-label">Social</span>
+          <ul class="contact-social-list contact-social-icons">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Dribbble"><span aria-hidden="true">🎨</span></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="contact-form-wrapper reveal">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group form-group-float">
+            <input type="text" id="full-name" name="fullName" placeholder=" " required>
+            <label for="full-name">Full Name</label>
+          </div>
+
+          <div class="form-group form-group-float">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email Address</label>
+          </div>
+
+          <div class="form-group form-group-float form-group-select">
+            <select id="subject" name="subject" required>
+              <option value="Project Inquiry">Project Inquiry</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Mentorship">Mentorship</option>
+              <option value="Speaking">Speaking</option>
+              <option value="Other">Other</option>
+            </select>
+            <label for="subject">Subject</label>
+          </div>
+
+          <div class="form-group form-group-float">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <button type="submit" class="contact-submit">Send Message</button>
+        </form>
+
+        <p id="contact-error" class="contact-error" hidden role="alert" aria-live="assertive">
+          Something went wrong. Please try again.
+        </p>
+
+        <p id="contact-success" class="contact-success" hidden role="status" aria-live="polite">
+          ✅ Thanks! Your message was sent. I'll reply within 24 hours.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">Aanya Sharma</p>
+        <p class="footer-tagline">Designing calm products for noisy industries.</p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-heading">Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-heading">Social</h3>
+        <ul class="footer-social footer-social-icons">
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><span aria-hidden="true">💼</span></a></li>
+          <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Dribbble"><span aria-hidden="true">🎨</span></a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter"><span aria-hidden="true">🐦</span></a></li>
+          <li><a href="mailto:hello@aanyasharma.design" class="social-icon-btn" aria-label="Email"><span aria-hidden="true">✉️</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Aanya Sharma — Built with curiosity <span class="footer-heart" aria-hidden="true">♥</span> and Cursor.</p>
+    </div>
+  </footer>
+
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
